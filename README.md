@@ -6,6 +6,7 @@ These are the programming languages, tools, libraries & softwares used in this p
 <div>
   <img src= "https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="50" height="50"/>&nbsp;
   <img src= "https://github.com/devicons/devicon/blob/master/icons/opencv/opencv-original.svg" title="OpenCV" alt="OpenCV" width="50" height="50"/>&nbsp;
+  <img src= "https://developer.asustor.com/uploadIcons/0020_999_1686722049_ffmpeg.png" title="Ffmpeg" alt="ffmpeg" width="50" height="50"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/windows11/windows11-original.svg" title="Windows" alt="Windows" width="50" height="50"/>&nbsp;
   <img src= "https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="Vscode" alt="Vscode" width="50" height="50"/>&nbsp;
   <img src= "https://archive.org/download/github.com-heartexlabs-label-studio_-_2021-01-29_16-37-20/cover.jpg" title="LabelStudio" alt="LabelStudio" width="50" height="50"/>&nbsp;

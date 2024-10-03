@@ -4,8 +4,10 @@ import os
 Coords = {} #Criamos o dicionário que será utilizado 
 
 for predict in os.listdir("runs/detect/predicts") : # Percorre-se cada pasta predict de cada concentração e repetição 
-    i = 0  
+    i = 0 
+    video = predict
     file_count = len(os.listdir("runs/detect/predicts/" + predict + "/labels")) #Quantos arquivos temos na pasta analisada 
+    print(f"{predict} - Quantidade de arquivos a serem processados = {file_count}")
     
     for label in os.listdir("runs/detect/predicts/" + predict + "/labels") : # Dentro de cada pasta labels percorremos por todos os arquivos .txt de label 
         try:
@@ -32,10 +34,20 @@ for predict in os.listdir("runs/detect/predicts") : # Percorre-se cada pasta pre
             "Width" : width ,
             "Height": height 
         }
+       
+        if i == round(file_count/100)*25 :
+            print(f"{video} 25% concluído")
+            
+        if i == round(file_count/100)*50 :
+            print(f"{video} 50% concluído")
+            
+        if i == round(file_count/100)*75 :
+            print(f"{video} 75% concluído")
+            
+        if i == file_count-1 : 
+            print(f"{video} 100% concluído")
         
-    progress = (i+1)/file_count*100 
-    if progress % 25 == 0 : 
-        print(f"Progresso : {progress:.2f}%")
+        i += 1 
         
 # Transformamos o dicionário em uma lista Numpy para exportar como .npz 
 labels = list(Coords.keys())
@@ -47,6 +59,7 @@ width_values = np.array([coords['Height'] for coords in Coords.values()])
 
 # Salvando em um arquivo .npz
 np.savez('Coords.npz', labels=labels, classe=class_values, X_center=X_center_values, Y_center=Y_center_values, height=height_values, width=width_values)
+print("processo finalizado")
             
             
         

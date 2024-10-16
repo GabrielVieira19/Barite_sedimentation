@@ -9,6 +9,6 @@ These are the programming languages, tools, libraries & softwares used in this p
   <img src= "https://developer.asustor.com/uploadIcons/0020_999_1686722049_ffmpeg.png" title="Ffmpeg" alt="ffmpeg" width="50" height="50"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/windows11/windows11-original.svg" title="Windows" alt="Windows" width="50" height="50"/>&nbsp;
   <img src= "https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="Vscode" alt="Vscode" width="50" height="50"/>&nbsp;
-  <img src= "https://archive.org/download/github.com-heartexlabs-label-studio_-_2021-01-29_16-37-20/cover.jpg" title="LabelStudio" alt="LabelStudio" width="50" height="50"/>&nbsp;
+  <img src= "https://github.com/HumanSignal/label-studio/blob/develop/images/heartex_icon_opossum_orang@2x.png?raw=true" title="LabelStudio" alt="LabelStudio" width="50" height="50"/>&nbsp;
   <img src= "https://cdn.prod.website-files.com/646dd1f1a3703e451ba81ecc/64994922cf2a6385a4bf4489_UltralyticsYOLO_mark_blue.svg" title="UltralyticsYolov8" alt="UltralyticsYolov8" width="50" height="50"/>&nbsp;
 </div>

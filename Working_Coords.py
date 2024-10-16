@@ -44,14 +44,15 @@ def plotar_cv(ax, cv, indices, altura, tempo, titulo):
 dados_F = np.load('Coords_F.npz', allow_pickle=True)
 dados_V = np.load('Coords_V.npz', allow_pickle=True)
 
-# Separar as informações
+# Separar as informações de acordo com os metodos de captura 
+# Dados da câmera fotográfica 
 file_names_fotografica = dados_F['labels']
-file_names_vigilancia = dados_V['labels']
-
 x_center_F = dados_F['X_center']
 y_center_F = dados_F['Y_center']
 height_F = dados_F['height']
 
+# Dados da câmera de vigilância
+file_names_vigilancia = dados_V['labels']
 x_center_V = dados_V['X_center']
 y_center_V = dados_V['Y_center']
 height_V = dados_V['height']
@@ -74,6 +75,7 @@ tempo_cv3_F = calcular_tempo_acumulado(indices_cv3_F, 60)
 tempo_cv6_F = calcular_tempo_acumulado(indices_cv6_F, 30)
 tempo_cv9_F = calcular_tempo_acumulado(indices_cv9_F, 30)
 tempo_cv12_F = calcular_tempo_acumulado(indices_cv12_F, 30)
+
 # Calular os tempos acumulados para cada CV de vigilância
 tempo_cv3_V = calcular_tempo_acumulado(indices_cv3_V, 1)
 tempo_cv6_V = calcular_tempo_acumulado(indices_cv6_V, 1)

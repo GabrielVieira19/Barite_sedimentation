@@ -3,10 +3,10 @@ import os
 import re 
 
 # Nessa versão usei 2 diferentes dicionários para separar os dados das capturas, a fim de facilitar o processamento destes posteriormente 
-
 Coords_F = {} # Dicionário para cada tipo de captura  
 Coords_V = {} # Dicionário para cada tipo de captura  
 
+# facilita o acesso dos caminhos corretos
 paths = ['runs/detect/predicts/Predicts_F/' , 'runs/detect/predicts/Predicts_V/']
    
 for path in paths :   
